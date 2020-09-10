@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 
 namespace Senai.EfCore.Domains
 {
-    public class PedidoItem
+    /// <summary>
+    /// Define a classe PedidoItem que herda de BaseDomain
+    /// </summary>
+    public class PedidoItem : BaseDomain
     {
-        [Key]
-        public Guid Id { get; set; }
         public Guid IdPedido { get; set; }
         [ForeignKey("IdPedido")]
         public Pedido Pedido { get; set; }
@@ -18,10 +19,6 @@ namespace Senai.EfCore.Domains
         [Required]
         public int Quantidade { get; set; }
 
-        public PedidoItem()
-        {
-            Id = Guid.NewGuid();
-        }
     }
 }
 
