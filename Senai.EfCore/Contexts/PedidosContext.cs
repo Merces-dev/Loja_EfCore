@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Senai.EfCore.Contexts
 {
-    public class PedidoContext: DbContext
+    public class PedidosContext: DbContext
     {
         public DbSet<Pedido> Pedidos { get; set; }
         public DbSet<Produto> Produtos { get; set; }

@@ -10,10 +10,10 @@ namespace Senai.EfCore.Repositories
 {
     public class ProdutoRepository : IProdutoRepository
     {
-        private readonly PedidoContext _ctx;
+        private readonly PedidosContext _ctx;
         public ProdutoRepository()
         {
-            _ctx = new PedidoContext();
+            _ctx = new PedidosContext();
         }
         #region leitura
 

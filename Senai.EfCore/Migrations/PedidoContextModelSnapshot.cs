@@ -8,7 +8,7 @@ using Senai.EfCore.Contexts;
 
 namespace Senai.EfCore.Migrations
 {
-    [DbContext(typeof(PedidoContext))]
+    [DbContext(typeof(PedidosContext))]
     partial class PedidoContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

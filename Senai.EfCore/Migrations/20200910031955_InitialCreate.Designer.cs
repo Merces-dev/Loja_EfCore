@@ -9,7 +9,7 @@ using Senai.EfCore.Contexts;
 
 namespace Senai.EfCore.Migrations
 {
-    [DbContext(typeof(PedidoContext))]
+    [DbContext(typeof(PedidosContext))]
     [Migration("20200910031955_InitialCreate")]
     partial class InitialCreate
     {

@@ -22,38 +22,108 @@ namespace Senai.EfCore.Controllers
         }
 
         [HttpGet]
-        public List<Produto> Get()
+        public IActionResult Get()
         {
-            return _produtoRepository.Listar();
+            try
+            {
+                var produtos = _produtoRepository.Listar();
+
+
+                if (produtos.Count == 0)
+                    return NoContent();
+                return Ok(new
+                {
+                    totalCount = produtos.Count,
+                    data = produtos
+                });
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(new
+                {
+                    statusCode = 400,
+                    error = "Ocorreu um erro no endpoint Get/produtos, envie um e-mail para giovanitjs@gmail.com informando o mesmo"
+                });
+            }
         }
 
-        // GET api/<RacaController>/5
+        // GET api/produtos/5
         [HttpGet("{id}")]
-        public Produto Get(Guid id)
+        public IActionResult Get(Guid id)
         {
-            return _produtoRepository.BuscarPorId(id);
+            try
+            {
+
+                Produto produto = _produtoRepository.BuscarPorId(id);
+
+                // Verifico se o produto foi encontrado e caso não exista retorno NotFounf
+                if (produto == null)
+                    return NotFound();
+
+                //Caso exista retorno Ok e os dados do produto
+                return Ok(produto);
+            }
+            catch (Exception ex)
+            {
+                //Caso ocorra algum erro retorno BadRequest e a mensagem da exception
+                return BadRequest(ex.Message);
+            }
         }
 
-        // POST api/<AlunoController>
+        // POST api/produtos
         [HttpPost]
-        public void Post(Produto produto)
+        public IActionResult Post(Produto produto)
         {
-            _produtoRepository.Adicionar(produto);
+            try
+            {
+
+                _produtoRepository.Adicionar(produto);
+
+                return Ok(produto);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
-        // PUT api/<AlunoController>/5
+        // PUT api/produtos/5
         [HttpPut("{id}")]
-        public void Put(Guid id, Produto produto)
+        public IActionResult Put(Guid id, Produto produto)
         {
-            produto.Id = id;
-            _produtoRepository.Editar(produto);
+            try
+            {
+                _produtoRepository.Editar(produto);
+
+                return Ok(produto);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
-        // DELETE api/<AlunoController>/5
+        // DELETE api/produtos/5
         [HttpDelete("{id}")]
-        public void Delete(Guid id)
+        public IActionResult Delete(Guid id)
         {
-            _produtoRepository.Remover(id);
+            try
+            {
+                //Busca o produto pelo Id
+                var produto = _produtoRepository.BuscarPorId(id);
+
+                //Verifica se produto existe e caso não exista retorna NotFound
+                if (produto == null)
+                    return NotFound();
+
+                _produtoRepository.Remover(id);
+                return Ok(id);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }
