@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iVkQly/+EIE/+iqpJOuhpk3Xqv4qeuZgw9RG0eHoX7xMqBrdyUW8uGJANp6GUZHg6CJA2w/tvxRbYegBEeZwfQ==",
+  "dgSpecHash": "PGXBcGCqlgbhd7tJxrOoxCllamAYcl87qiI1yT+MY5qKKuE7UNO2PRKJb/f7+X2xenfwcZTVBj9KdbgtB80FGQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\giova\\source\\repos\\Senai.EfCore\\Senai.EfCore\\Senai.EfCore.csproj",
+  "projectFilePath": "C:\\Users\\giova\\OneDrive\\Documentos\\Projetos\\Loja_EfCore\\Senai.EfCore\\Senai.EfCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\giova\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\giova\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
