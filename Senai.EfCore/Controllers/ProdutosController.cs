@@ -21,7 +21,10 @@ namespace Senai.EfCore.Controllers
         {
             _produtoRepository = new ProdutoRepository();
         }
-
+        /// <summary>
+        /// Busca todos os produtos
+        /// </summary>
+        /// <returns> Todos os produtos cadastrados </returns>
         [HttpGet]
         public IActionResult Get()
         {
@@ -50,6 +53,11 @@ namespace Senai.EfCore.Controllers
         }
 
         // GET api/produtos/5
+        /// <summary>
+        /// Busca um produto pelo ID
+        /// </summary>
+        /// <param name="id"> Id do produto</param>
+        /// <returns> O produto solicitado </returns>
         [HttpGet("{id}")]
         public IActionResult Get(Guid id)
         {
@@ -73,6 +81,11 @@ namespace Senai.EfCore.Controllers
         }
 
         // POST api/produtos
+        /// <summary>
+        /// Adiciona um produto
+        /// </summary>
+        /// <param name="produto"></param>
+        /// <returns> O produto adicionado</returns>
         [HttpPost]
         public IActionResult Post([FromForm] Produto produto)
         {
@@ -95,6 +108,12 @@ namespace Senai.EfCore.Controllers
         }
 
         // PUT api/produtos/5
+        /// <summary>
+        /// Edita um produto
+        /// </summary>
+        /// <param name="id"> id do produto</param>
+        /// <param name="produto"></param>
+        /// <returns>O produto editado</returns>
         [HttpPut("{id}")]
         public IActionResult Put(Guid id, Produto produto)
         {
@@ -110,8 +129,12 @@ namespace Senai.EfCore.Controllers
             }
         }
 
-        // DELETE api/produtos/5
-        [HttpDelete("{id}")]
+        /// <summary>
+        /// Apaga um produto pelo id
+        /// </summary>
+        /// <param name="id"> Id do produto</param>
+        /// <returns>A remoção do produto solicitado</returns>
+           [HttpDelete("{id}")]
         public IActionResult Delete(Guid id)
         {
             try
