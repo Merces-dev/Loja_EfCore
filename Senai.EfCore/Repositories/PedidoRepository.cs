@@ -1,11 +1,12 @@
-﻿
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Senai.EfCore.Contexts;
 using Senai.EfCore.Domains;
 using Senai.EfCore.Interfaces;
+using Senai.EfCore.Migrations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 
 namespace Senai.EfCore.Repositories
@@ -80,6 +81,5 @@ namespace Senai.EfCore.Repositories
             }
         }
     }
-}
 }
         #endregion

@@ -120,3 +120,8 @@ C:\Users\giova\OneDrive\Documentos\Projetos\Loja_EfCore\Senai.EfCore\obj\Debug\n
 C:\Users\giova\OneDrive\Documentos\Projetos\Loja_EfCore\Senai.EfCore\obj\Debug\netcoreapp3.1\staticwebassets\Senai.EfCore.StaticWebAssets.Manifest.cache
 C:\Users\giova\OneDrive\Documentos\Projetos\Loja_EfCore\Senai.EfCore\obj\Debug\netcoreapp3.1\staticwebassets\Senai.EfCore.StaticWebAssets.xml
 C:\Users\giova\OneDrive\Documentos\Projetos\Loja_EfCore\Senai.EfCore\obj\Debug\netcoreapp3.1\Senai.EfCore.genruntimeconfig.cache
+C:\Users\giova\OneDrive\Documentos\Projetos\Loja_EfCore\Senai.EfCore\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\giova\OneDrive\Documentos\Projetos\Loja_EfCore\Senai.EfCore\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\giova\OneDrive\Documentos\Projetos\Loja_EfCore\Senai.EfCore\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\giova\OneDrive\Documentos\Projetos\Loja_EfCore\Senai.EfCore\obj\Debug\netcoreapp3.1\Senai.EfCore.csproj.CoreCompileInputs.cache
+C:\Users\giova\OneDrive\Documentos\Projetos\Loja_EfCore\Senai.EfCore\obj\Debug\netcoreapp3.1\Senai.EfCore.MvcApplicationPartsAssemblyInfo.cache
