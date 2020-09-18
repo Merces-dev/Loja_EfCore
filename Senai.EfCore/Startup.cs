@@ -1,3 +1,4 @@
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Senai.EfCore
+namespace Senai.EfCore.Tarde
 {
     public class Startup
     {
@@ -25,6 +26,7 @@ namespace Senai.EfCore
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

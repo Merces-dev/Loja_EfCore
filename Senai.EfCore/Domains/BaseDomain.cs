@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Senai.EfCore.Domains
 {
     /// <summary>
-    /// Define a classe BaseDomain que tem a funcção de abstrair o Guid Id das outras classes
+    /// Define a classe BaseDomain que tem a função de abstrair o Guid Id das outras classes
     /// </summary>
     public abstract class BaseDomain
     {

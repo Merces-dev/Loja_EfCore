@@ -23,7 +23,5 @@ namespace Senai.EfCore.Domains
 
         [Required]
         public int Quantidade { get; set; }
-
-
     }
 }
