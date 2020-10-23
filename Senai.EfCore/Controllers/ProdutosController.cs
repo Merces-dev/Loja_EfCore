@@ -69,9 +69,16 @@ namespace Senai.EfCore.Controllers
                 // Verifico se o produto foi encontrado e caso não exista retorno NotFounf
                 if (produto == null)
                     return NotFound();
+                Moeda dolar = new Moeda();
 
                 //Caso exista retorno Ok e os dados do produto
-                return Ok(produto);
+                return Ok(new
+                {
+                    produto,
+
+                    // faz a divisão para descobrir o valor do produto em dolar
+                    valorDolar = produto.Preco / dolar.GetDolarValue()
+                }); 
             }
             catch (Exception ex)
             {

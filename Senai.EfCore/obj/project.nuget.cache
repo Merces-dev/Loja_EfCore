@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eSkVYev25jfC3JgXUcL+z765syH1mPydtrawNWyFXttAIcb9q9puhyo7QYDZ+ZqKc6w2kiH9C9UrAfUlXpy4LQ==",
+  "dgSpecHash": "sAmV8QUIMlv8rAZ1Bizr170s5Rnc/cnZJ1u0GdPetbg7FUbi2Lvm+yjQG7CWgD5+/E5dNdjTJUJTA5HPcTa2ig==",
   "success": true,
-  "projectFilePath": "C:\\Users\\giova\\OneDrive\\Documentos\\Projetos\\Loja_EfCore\\Senai.EfCore\\Senai.EfCore.csproj",
+  "projectFilePath": "C:\\Users\\giova\\source\\repos\\Loja_EfCore\\Senai.EfCore\\Senai.EfCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\giova\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.7\\microsoft.aspnetcore.jsonpatch.3.1.7.nupkg.sha512",
     "C:\\Users\\giova\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.7\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.7.nupkg.sha512",
